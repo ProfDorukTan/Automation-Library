@@ -83,3 +83,8 @@ def hotkey_ctrl_p():
 def hotkey_ctrl_o():
     pyautogui.hotkey('ctrl', 'o')
     safetywait()
+
+def press_key_for_duration(key, duration):
+    pyautogui.keyDown(key)
+    time.sleep(duration)
+    pyautogui.keyUp(key)
